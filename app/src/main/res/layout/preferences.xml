@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFffFF"
+    tools:context="kr.hs.e_mirim.scaling.scheduler.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perferences"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#65b1ff"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"/>
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:background="#88c3ff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="정보"
+            android:textColor="#65b1ff"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            android:textColor="#65b1ff"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피드백:soyunlee882@e-mirim.hs.kr, kkn00077@e-mirim.hs.kr"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

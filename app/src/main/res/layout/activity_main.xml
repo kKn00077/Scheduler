@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFffFF"
+    tools:context="kr.hs.e_mirim.scaling.scheduler.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/pre"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/preference"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="#ffffff"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduler"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#65b1ff"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="80dp"/>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/addbutton"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="#ffffff"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:background="#88c3ff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="월"
+            android:textSize="15dp"
+            android:textColor="#65b1ff"
+            android:layout_marginLeft="3dp"
+            />
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="주차"
+            android:textSize="15dp"
+            android:textColor="#65b1ff"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerInParent="true"
+            android:background="#88c3ff"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+
+        <GridView
+
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="8"
+
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="1dp"
+            />
+
+
+        <!--android:isScrollContainer="false" "-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>
