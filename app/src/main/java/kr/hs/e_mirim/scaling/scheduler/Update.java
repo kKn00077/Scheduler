@@ -396,7 +396,7 @@ public class Update extends Activity implements View.OnClickListener{
                     Glide.with(this)
                             .load(R.drawable.ccolor1 + i)
                             .fitCenter()
-re                            .crossFade()
+                            .crossFade()
                             .into(colors[i]);
                 }
             }
